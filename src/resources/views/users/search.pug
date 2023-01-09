@@ -1,0 +1,11 @@
+h1 Search
+form(method='GET', action='/users/search')
+  .form-group
+    label(for='name') Name
+    input#name.form-control(type='name' placeholder='Enter name' name="q")
+  //- .form-group
+  //-   label(for='id') Password
+  //-   input#id.form-control(type='text' placeholder='Id' name="q")
+  .form-check
+  button.btn.btn-primary(type='submit') Submit
+

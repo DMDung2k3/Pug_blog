@@ -1,0 +1,12 @@
+h1 Users
+a(href='/users/create') New user
+
+form(method='GET' action='/users/search')
+  label Name
+  input(type="text" name="q")
+  button(type='submit') Search
+ul
+  each user in users
+    li=user.name
+  else
+    li There are no values
